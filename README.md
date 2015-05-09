@@ -1,3 +1,9 @@
+# Build Instructions #
+Just do: 'sudo make build'
+Please note the 'sudo', baseimage-docker-32's build process needs to be run as root!
+
+#==========================================================================#
+
 # A minimal Ubuntu base image modified for Docker-friendliness
 
 Baseimage-docker is a special [Docker](https://www.docker.com) image that is configured for correct use within Docker containers. It is Ubuntu, plus:
