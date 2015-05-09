@@ -45,11 +45,11 @@ tar cfz ubuntu.tgz -C $chroot_dir .
 IMAGEID=$(cat ubuntu.tgz | docker import - $docker_image)
 
 ### Generate the dockerfile
-echo "FROM "$NAME > images/Dockerfile
-cat image/Dockertemplate >> images/Dockerfile
+echo "FROM "$NAME > image/Dockerfile
+cat image/Dockertemplate >> image/Dockerfile
 
 ### Finally add the baseimage-docker components
 docker build -t $1:$2 --rm image
 
 ### Remove the dockerfile
-rm images/Dockerfile
+rm image/Dockerfile
