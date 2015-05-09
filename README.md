@@ -2,7 +2,7 @@
 Just do: 'sudo make build'
 Please note the 'sudo', baseimage-docker-32's build process needs to be run as root!
 
-#==========================================================================#
+#===================================#
 
 # A minimal Ubuntu base image modified for Docker-friendliness
 
